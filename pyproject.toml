@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "actground"
+version = "1.0.0"
+description = "Code for 'Readable but Not Controllable: Neuron-Level Evidence for Medical LLM Hallucination'"
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+# Pinned versions are in requirements.txt.
+dependencies = [
+    "torch", "transformers", "accelerate", "datasets", "huggingface_hub", "sentencepiece", "protobuf",
+    "numpy", "scipy", "scikit-learn", "pandas", "pyarrow", "matplotlib", "PyYAML", "tqdm",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["actground"]
+known-local-folder = ["synthetic", "make_tables"]

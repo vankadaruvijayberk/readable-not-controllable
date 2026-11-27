@@ -1,0 +1,65 @@
+seed: 42
+
+activations_repo: vjdeara/actground-multimodel-public
+interventions_repo: vjdeara/actground-interventions-public
+
+models:
+  biomistral-7b: BioMistral/BioMistral-7B
+  meditron-7b: epfl-llm/meditron-7b
+  pmc-llama-7b: chaoyi-wu/PMC_LLAMA_7B
+  llama-3.1-8b-instruct: meta-llama/Meta-Llama-3.1-8B-Instruct
+
+datasets: [pubmedqa_labeled, medqa_usmle, medmcqa, pubmedqa_artificial]
+
+generation:
+  device: cuda
+  dtype: float16
+  max_new_tokens: 24
+  max_prompt_length: 768
+
+collection:
+  chunk_size: 50
+  # null keeps every example of the split. These are the sizes of the released activations.
+  budgets: {pubmedqa_labeled: 1000, medqa_usmle: null, medmcqa: 5000, pubmedqa_artificial: 5000}
+
+detection:
+  ks: [10, 50, 100, 500]
+  n_random_draws: 30
+  random_subset_seed: 123
+  n_bootstrap: 1000
+  l1_C: 0.1
+  small_k: 50
+  overlap_ks: [50, 100, 500]
+  cka_k: 500
+  min_samples: 100
+  min_positives: 30
+
+ksweep:
+  # must contain intervention.dose_k: the analysis reads the top-k AUROC at that k as each model's detection strength
+  k_grid: [1, 2, 3, 5, 8, 10, 15, 20, 30, 50, 75, 100, 150, 200, 300, 500, 750, 1000, 1500, 2000, 3000]
+  small_k_max: 50
+  draws_small_k: 200
+  draws_large_k: 50
+  projection_dims: [2, 5, 10, 20, 50, 100, 200, 500]
+  projection_draws: 50
+
+intervention:
+  # sampled independently of the collection run, then capped at max_total_samples
+  budgets: {pubmedqa_labeled: null, medqa_usmle: 10000, medmcqa: 5000, pubmedqa_artificial: 5000}
+  max_total_samples: 4000
+  test_frac: 0.2
+  train_cap: 2500
+  eval_cap: 1500
+  batch_size: 16
+  dose_alphas: [0.0, 0.25, 0.5, 1.0, 1.5, 2.0, 4.0]
+  dose_k: 300
+  sparse_ks: [10, 300, 2000]
+  sparse_alpha: 0.5
+  direction_strengths: [-4.0, -2.0, 0.0, 2.0, 4.0]
+
+analysis:
+  n_bootstrap: 2000
+  n_pooled_bootstrap: 5000
+  reliability_threshold: 0.55
+  trend_p: 0.05
+  min_excess_over_control: 0.02

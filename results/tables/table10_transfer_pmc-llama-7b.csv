@@ -1,0 +1,5 @@
+train \ test,medmcqa,medqa_usmle,pubmedqa_artificial,pubmedqa_labeled
+medmcqa,0.600,0.492,0.548,0.537
+medqa_usmle,0.466,0.586,0.413,0.452
+pubmedqa_artificial,0.510,0.505,0.778,0.564
+pubmedqa_labeled,0.503,0.495,0.568,0.719

@@ -1,0 +1,17 @@
+dataset,model,n,hall_rate,positives
+medmcqa,BioMistral-7B,4944,0.614,3035
+medmcqa,Meditron-7B,4995,0.711,3549
+medmcqa,PMC-LLaMA-7B,5000,0.713,3564
+medmcqa,Llama-3.1-8B-Instruct,5000,0.224,1120
+medqa_usmle,BioMistral-7B,10174,0.574,5835
+medqa_usmle,Meditron-7B,10177,0.742,7548
+medqa_usmle,PMC-LLaMA-7B,10177,0.746,7596
+medqa_usmle,Llama-3.1-8B-Instruct,10177,0.294,2987
+pubmedqa_artificial,BioMistral-7B,4918,0.045,221
+pubmedqa_artificial,Meditron-7B,4810,0.047,225
+pubmedqa_artificial,PMC-LLaMA-7B,4693,0.072,340
+pubmedqa_artificial,Llama-3.1-8B-Instruct,4992,0.018,89
+pubmedqa_labeled,BioMistral-7B,972,0.291,283
+pubmedqa_labeled,Meditron-7B,930,0.349,325
+pubmedqa_labeled,PMC-LLaMA-7B,847,0.437,370
+pubmedqa_labeled,Llama-3.1-8B-Instruct,1000,0.207,207

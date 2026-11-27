@@ -1,0 +1,344 @@
+table,row,column,paper_value
+table01_best_layer,Best layer,BioMistral-7B,L17
+table01_best_layer,Best layer,Meditron-7B,L14
+table01_best_layer,Best layer,PMC-LLaMA-7B,L10
+table01_best_layer,Best layer,Llama-3.1-8B-Instruct,L15
+table02_detection,Best layer,BioMistral-7B,L17
+table02_detection,Best layer,Meditron-7B,L14
+table02_detection,Best layer,PMC-LLaMA-7B,L10
+table02_detection,Best layer,Llama-3.1-8B-Instruct,L15
+table02_detection,Probe AUROC,BioMistral-7B,0.808
+table02_detection,Probe AUROC,Meditron-7B,0.796
+table02_detection,Probe AUROC,PMC-LLaMA-7B,0.767
+table02_detection,Probe AUROC,Llama-3.1-8B-Instruct,0.863
+table02_detection,Full-layer AUROC,BioMistral-7B,0.769
+table02_detection,Full-layer AUROC,Meditron-7B,0.782
+table02_detection,Full-layer AUROC,PMC-LLaMA-7B,0.739
+table02_detection,Full-layer AUROC,Llama-3.1-8B-Instruct,0.815
+table02_detection,Random k=500 AUROC,BioMistral-7B,0.807
+table02_detection,Random k=500 AUROC,Meditron-7B,0.789
+table02_detection,Random k=500 AUROC,PMC-LLaMA-7B,0.763
+table02_detection,Random k=500 AUROC,Llama-3.1-8B-Instruct,0.859
+table02_detection,Base hallucination rate,BioMistral-7B,0.446
+table02_detection,Base hallucination rate,Meditron-7B,0.557
+table02_detection,Base hallucination rate,PMC-LLaMA-7B,0.573
+table02_detection,Base hallucination rate,Llama-3.1-8B-Instruct,0.208
+table03_baselines,linear probe on top-k neurons (ours),BioMistral-7B,0.808
+table03_baselines,linear probe on top-k neurons (ours),Meditron-7B,0.796
+table03_baselines,linear probe on top-k neurons (ours),PMC-LLaMA-7B,0.767
+table03_baselines,linear probe on top-k neurons (ours),Llama-3.1-8B-Instruct,0.863
+table03_baselines,token_neg_prob,BioMistral-7B,0.7358
+table03_baselines,token_neg_prob,Meditron-7B,0.4967
+table03_baselines,token_neg_prob,PMC-LLaMA-7B,0.2663
+table03_baselines,token_neg_prob,Llama-3.1-8B-Instruct,0.7644
+table03_baselines,token_entropy,BioMistral-7B,0.6025
+table03_baselines,token_entropy,Meditron-7B,0.3068
+table03_baselines,token_entropy,PMC-LLaMA-7B,0.2630
+table03_baselines,token_entropy,Llama-3.1-8B-Instruct,0.7061
+table03_baselines,saplma_style_resid,BioMistral-7B,0.7469
+table03_baselines,saplma_style_resid,Meditron-7B,0.7729
+table03_baselines,saplma_style_resid,PMC-LLaMA-7B,0.7309
+table03_baselines,saplma_style_resid,Llama-3.1-8B-Instruct,0.7916
+table03_baselines,haloscope_style,BioMistral-7B,0.7243
+table03_baselines,haloscope_style,Meditron-7B,0.7563
+table03_baselines,haloscope_style,PMC-LLaMA-7B,0.7453
+table03_baselines,haloscope_style,Llama-3.1-8B-Instruct,0.6771
+table03_baselines,ccs_style,BioMistral-7B,0.7154
+table03_baselines,ccs_style,Meditron-7B,0.7518
+table03_baselines,ccs_style,PMC-LLaMA-7B,0.7376
+table03_baselines,ccs_style,Llama-3.1-8B-Instruct,0.6349
+table04_cross_position,Jaccard top-50,BioMistral-7B,0.0096
+table04_cross_position,Jaccard top-50,Meditron-7B,0.0320
+table04_cross_position,Jaccard top-50,PMC-LLaMA-7B,0.0180
+table04_cross_position,Jaccard top-50,Llama-3.1-8B-Instruct,0.0041
+table04_cross_position,Random Jaccard,BioMistral-7B,0.0012
+table04_cross_position,Random Jaccard,Meditron-7B,0.0038
+table04_cross_position,Random Jaccard,PMC-LLaMA-7B,0.0038
+table04_cross_position,Random Jaccard,Llama-3.1-8B-Instruct,0.0012
+table04_cross_position,Spearman (AUROC rank),BioMistral-7B,0.0520
+table04_cross_position,Spearman (AUROC rank),Meditron-7B,0.0976
+table04_cross_position,Spearman (AUROC rank),PMC-LLaMA-7B,0.0651
+table04_cross_position,Spearman (AUROC rank),Llama-3.1-8B-Instruct,0.0285
+table04_cross_position,CKA top-500,BioMistral-7B,0.9514
+table04_cross_position,CKA top-500,Meditron-7B,0.8962
+table04_cross_position,CKA top-500,PMC-LLaMA-7B,0.8620
+table04_cross_position,CKA top-500,Llama-3.1-8B-Instruct,0.9239
+table05_interventions,Selected-set swing,estimate,0.012
+table05_interventions,Selected-set swing,ci_low,0.007
+table05_interventions,Selected-set swing,ci_high,0.019
+table05_interventions,Random-set swing,estimate,0.008
+table05_interventions,Random-set swing,ci_low,0.005
+table05_interventions,Random-set swing,ci_high,0.010
+table05_interventions,Delta (selected - random),estimate,0.0042
+table05_interventions,Delta (selected - random),ci_low,-0.0002
+table05_interventions,Delta (selected - random),ci_high,0.0096
+table05_interventions,Amplification effect,estimate,0.0037
+table05_interventions,Amplification effect,ci_low,-0.0032
+table05_interventions,Amplification effect,ci_high,0.012
+table05_interventions,"Logit slope, log P(correct) vs alpha",estimate,-0.0045
+table05_interventions,"Logit slope, log P(correct) vs alpha",ci_low,-0.033
+table05_interventions,"Logit slope, log P(correct) vs alpha",ci_high,0.020
+table06_models,d_inter,BioMistral-7B,14336
+table06_models,d_inter,Meditron-7B,11008
+table06_models,d_inter,PMC-LLaMA-7B,11008
+table06_models,d_inter,Llama-3.1-8B-Instruct,14336
+table06_models,N (clean),BioMistral-7B,21008
+table06_models,N (clean),Meditron-7B,20912
+table06_models,N (clean),PMC-LLaMA-7B,20717
+table06_models,N (clean),Llama-3.1-8B-Instruct,21169
+table06_models,Overall hall-rate,BioMistral-7B,0.446
+table06_models,Overall hall-rate,Meditron-7B,0.557
+table06_models,Overall hall-rate,PMC-LLaMA-7B,0.573
+table06_models,Overall hall-rate,Llama-3.1-8B-Instruct,0.208
+table07_datasets,medmcqa|BioMistral-7B,n,4944
+table07_datasets,medmcqa|BioMistral-7B,hall_rate,0.614
+table07_datasets,medmcqa|BioMistral-7B,positives,3035
+table07_datasets,medmcqa|Meditron-7B,n,4995
+table07_datasets,medmcqa|Meditron-7B,hall_rate,0.711
+table07_datasets,medmcqa|Meditron-7B,positives,3549
+table07_datasets,medmcqa|PMC-LLaMA-7B,n,5000
+table07_datasets,medmcqa|PMC-LLaMA-7B,hall_rate,0.713
+table07_datasets,medmcqa|PMC-LLaMA-7B,positives,3564
+table07_datasets,medmcqa|Llama-3.1-8B-Instruct,n,5000
+table07_datasets,medmcqa|Llama-3.1-8B-Instruct,hall_rate,0.224
+table07_datasets,medmcqa|Llama-3.1-8B-Instruct,positives,1120
+table07_datasets,medqa_usmle|BioMistral-7B,n,10174
+table07_datasets,medqa_usmle|BioMistral-7B,hall_rate,0.574
+table07_datasets,medqa_usmle|BioMistral-7B,positives,5835
+table07_datasets,medqa_usmle|Meditron-7B,n,10177
+table07_datasets,medqa_usmle|Meditron-7B,hall_rate,0.742
+table07_datasets,medqa_usmle|Meditron-7B,positives,7548
+table07_datasets,medqa_usmle|PMC-LLaMA-7B,n,10177
+table07_datasets,medqa_usmle|PMC-LLaMA-7B,hall_rate,0.746
+table07_datasets,medqa_usmle|PMC-LLaMA-7B,positives,7596
+table07_datasets,medqa_usmle|Llama-3.1-8B-Instruct,n,10177
+table07_datasets,medqa_usmle|Llama-3.1-8B-Instruct,hall_rate,0.294
+table07_datasets,medqa_usmle|Llama-3.1-8B-Instruct,positives,2987
+table07_datasets,pubmedqa_artificial|BioMistral-7B,n,4918
+table07_datasets,pubmedqa_artificial|BioMistral-7B,hall_rate,0.045
+table07_datasets,pubmedqa_artificial|BioMistral-7B,positives,221
+table07_datasets,pubmedqa_artificial|Meditron-7B,n,4810
+table07_datasets,pubmedqa_artificial|Meditron-7B,hall_rate,0.047
+table07_datasets,pubmedqa_artificial|Meditron-7B,positives,225
+table07_datasets,pubmedqa_artificial|PMC-LLaMA-7B,n,4693
+table07_datasets,pubmedqa_artificial|PMC-LLaMA-7B,hall_rate,0.072
+table07_datasets,pubmedqa_artificial|PMC-LLaMA-7B,positives,340
+table07_datasets,pubmedqa_artificial|Llama-3.1-8B-Instruct,n,4992
+table07_datasets,pubmedqa_artificial|Llama-3.1-8B-Instruct,hall_rate,0.018
+table07_datasets,pubmedqa_artificial|Llama-3.1-8B-Instruct,positives,89
+table07_datasets,pubmedqa_labeled|BioMistral-7B,n,972
+table07_datasets,pubmedqa_labeled|BioMistral-7B,hall_rate,0.291
+table07_datasets,pubmedqa_labeled|BioMistral-7B,positives,283
+table07_datasets,pubmedqa_labeled|Meditron-7B,n,930
+table07_datasets,pubmedqa_labeled|Meditron-7B,hall_rate,0.349
+table07_datasets,pubmedqa_labeled|Meditron-7B,positives,325
+table07_datasets,pubmedqa_labeled|PMC-LLaMA-7B,n,847
+table07_datasets,pubmedqa_labeled|PMC-LLaMA-7B,hall_rate,0.437
+table07_datasets,pubmedqa_labeled|PMC-LLaMA-7B,positives,370
+table07_datasets,pubmedqa_labeled|Llama-3.1-8B-Instruct,n,1000
+table07_datasets,pubmedqa_labeled|Llama-3.1-8B-Instruct,hall_rate,0.207
+table07_datasets,pubmedqa_labeled|Llama-3.1-8B-Instruct,positives,207
+table08_transfer_biomistral-7b,medmcqa,medmcqa,0.722
+table08_transfer_biomistral-7b,medmcqa,medqa_usmle,0.614
+table08_transfer_biomistral-7b,medmcqa,pubmedqa_artificial,0.632
+table08_transfer_biomistral-7b,medmcqa,pubmedqa_labeled,0.491
+table08_transfer_biomistral-7b,medqa_usmle,medmcqa,0.647
+table08_transfer_biomistral-7b,medqa_usmle,medqa_usmle,0.661
+table08_transfer_biomistral-7b,medqa_usmle,pubmedqa_artificial,0.774
+table08_transfer_biomistral-7b,medqa_usmle,pubmedqa_labeled,0.551
+table08_transfer_biomistral-7b,pubmedqa_artificial,medmcqa,0.499
+table08_transfer_biomistral-7b,pubmedqa_artificial,medqa_usmle,0.474
+table08_transfer_biomistral-7b,pubmedqa_artificial,pubmedqa_artificial,0.954
+table08_transfer_biomistral-7b,pubmedqa_artificial,pubmedqa_labeled,0.737
+table08_transfer_biomistral-7b,pubmedqa_labeled,medmcqa,0.539
+table08_transfer_biomistral-7b,pubmedqa_labeled,medqa_usmle,0.494
+table08_transfer_biomistral-7b,pubmedqa_labeled,pubmedqa_artificial,0.764
+table08_transfer_biomistral-7b,pubmedqa_labeled,pubmedqa_labeled,0.868
+table09_transfer_meditron-7b,medmcqa,medmcqa,0.612
+table09_transfer_meditron-7b,medmcqa,medqa_usmle,0.511
+table09_transfer_meditron-7b,medmcqa,pubmedqa_artificial,0.696
+table09_transfer_meditron-7b,medmcqa,pubmedqa_labeled,0.502
+table09_transfer_meditron-7b,medqa_usmle,medmcqa,0.530
+table09_transfer_meditron-7b,medqa_usmle,medqa_usmle,0.582
+table09_transfer_meditron-7b,medqa_usmle,pubmedqa_artificial,0.496
+table09_transfer_meditron-7b,medqa_usmle,pubmedqa_labeled,0.502
+table09_transfer_meditron-7b,pubmedqa_artificial,medmcqa,0.515
+table09_transfer_meditron-7b,pubmedqa_artificial,medqa_usmle,0.508
+table09_transfer_meditron-7b,pubmedqa_artificial,pubmedqa_artificial,0.939
+table09_transfer_meditron-7b,pubmedqa_artificial,pubmedqa_labeled,0.732
+table09_transfer_meditron-7b,pubmedqa_labeled,medmcqa,0.506
+table09_transfer_meditron-7b,pubmedqa_labeled,medqa_usmle,0.491
+table09_transfer_meditron-7b,pubmedqa_labeled,pubmedqa_artificial,0.819
+table09_transfer_meditron-7b,pubmedqa_labeled,pubmedqa_labeled,0.852
+table10_transfer_pmc-llama-7b,medmcqa,medmcqa,0.600
+table10_transfer_pmc-llama-7b,medmcqa,medqa_usmle,0.492
+table10_transfer_pmc-llama-7b,medmcqa,pubmedqa_artificial,0.548
+table10_transfer_pmc-llama-7b,medmcqa,pubmedqa_labeled,0.537
+table10_transfer_pmc-llama-7b,medqa_usmle,medmcqa,0.466
+table10_transfer_pmc-llama-7b,medqa_usmle,medqa_usmle,0.586
+table10_transfer_pmc-llama-7b,medqa_usmle,pubmedqa_artificial,0.413
+table10_transfer_pmc-llama-7b,medqa_usmle,pubmedqa_labeled,0.452
+table10_transfer_pmc-llama-7b,pubmedqa_artificial,medmcqa,0.510
+table10_transfer_pmc-llama-7b,pubmedqa_artificial,medqa_usmle,0.505
+table10_transfer_pmc-llama-7b,pubmedqa_artificial,pubmedqa_artificial,0.778
+table10_transfer_pmc-llama-7b,pubmedqa_artificial,pubmedqa_labeled,0.564
+table10_transfer_pmc-llama-7b,pubmedqa_labeled,medmcqa,0.503
+table10_transfer_pmc-llama-7b,pubmedqa_labeled,medqa_usmle,0.495
+table10_transfer_pmc-llama-7b,pubmedqa_labeled,pubmedqa_artificial,0.568
+table10_transfer_pmc-llama-7b,pubmedqa_labeled,pubmedqa_labeled,0.719
+table11_transfer_llama-3.1-8b-instruct,medmcqa,medmcqa,0.859
+table11_transfer_llama-3.1-8b-instruct,medmcqa,medqa_usmle,0.762
+table11_transfer_llama-3.1-8b-instruct,medmcqa,pubmedqa_artificial,0.856
+table11_transfer_llama-3.1-8b-instruct,medmcqa,pubmedqa_labeled,0.630
+table11_transfer_llama-3.1-8b-instruct,medqa_usmle,medmcqa,0.821
+table11_transfer_llama-3.1-8b-instruct,medqa_usmle,medqa_usmle,0.785
+table11_transfer_llama-3.1-8b-instruct,medqa_usmle,pubmedqa_artificial,0.695
+table11_transfer_llama-3.1-8b-instruct,medqa_usmle,pubmedqa_labeled,0.608
+table11_transfer_llama-3.1-8b-instruct,pubmedqa_artificial,medmcqa,0.585
+table11_transfer_llama-3.1-8b-instruct,pubmedqa_artificial,medqa_usmle,0.593
+table11_transfer_llama-3.1-8b-instruct,pubmedqa_artificial,pubmedqa_artificial,0.974
+table11_transfer_llama-3.1-8b-instruct,pubmedqa_artificial,pubmedqa_labeled,0.709
+table11_transfer_llama-3.1-8b-instruct,pubmedqa_labeled,medmcqa,0.555
+table11_transfer_llama-3.1-8b-instruct,pubmedqa_labeled,medqa_usmle,0.543
+table11_transfer_llama-3.1-8b-instruct,pubmedqa_labeled,pubmedqa_artificial,0.903
+table11_transfer_llama-3.1-8b-instruct,pubmedqa_labeled,pubmedqa_labeled,0.834
+table12_precision_at_recall,0.50,BioMistral-7B,0.7184
+table12_precision_at_recall,0.50,Meditron-7B,0.7634
+table12_precision_at_recall,0.50,PMC-LLaMA-7B,0.7610
+table12_precision_at_recall,0.50,Llama-3.1-8B-Instruct,0.5832
+table12_precision_at_recall,0.70,BioMistral-7B,0.6840
+table12_precision_at_recall,0.70,Meditron-7B,0.7499
+table12_precision_at_recall,0.70,PMC-LLaMA-7B,0.7480
+table12_precision_at_recall,0.70,Llama-3.1-8B-Instruct,0.5128
+table12_precision_at_recall,0.80,BioMistral-7B,0.6643
+table12_precision_at_recall,0.80,Meditron-7B,0.7465
+table12_precision_at_recall,0.80,PMC-LLaMA-7B,0.7441
+table12_precision_at_recall,0.80,Llama-3.1-8B-Instruct,0.4710
+table12_precision_at_recall,0.90,BioMistral-7B,0.6369
+table12_precision_at_recall,0.90,Meditron-7B,0.7390
+table12_precision_at_recall,0.90,PMC-LLaMA-7B,0.7384
+table12_precision_at_recall,0.90,Llama-3.1-8B-Instruct,0.4144
+table13_probe_by_view,raw / prompt,BioMistral-7B,0.7904 (L24)
+table13_probe_by_view,raw / prompt,Meditron-7B,0.7931 (L18)
+table13_probe_by_view,raw / prompt,PMC-LLaMA-7B,0.7676 (L3)
+table13_probe_by_view,raw / prompt,Llama-3.1-8B-Instruct,0.8426 (L25)
+table13_probe_by_view,raw / gen0,BioMistral-7B,0.8084 (L17)
+table13_probe_by_view,raw / gen0,Meditron-7B,0.7960 (L14)
+table13_probe_by_view,raw / gen0,PMC-LLaMA-7B,0.7671 (L10)
+table13_probe_by_view,raw / gen0,Llama-3.1-8B-Instruct,0.8626 (L15)
+table13_probe_by_view,exact_cett / prompt,BioMistral-7B,0.7890 (L20)
+table13_probe_by_view,exact_cett / prompt,Meditron-7B,0.7960 (L17)
+table13_probe_by_view,exact_cett / prompt,PMC-LLaMA-7B,0.7666 (L2)
+table13_probe_by_view,exact_cett / prompt,Llama-3.1-8B-Instruct,0.8426 (L28)
+table13_probe_by_view,exact_cett / gen0,BioMistral-7B,0.8069 (L17)
+table13_probe_by_view,exact_cett / gen0,Meditron-7B,0.7907 (L19)
+table13_probe_by_view,exact_cett / gen0,PMC-LLaMA-7B,0.7684 (L8)
+table13_probe_by_view,exact_cett / gen0,Llama-3.1-8B-Instruct,0.8601 (L15)
+table13_probe_by_view,Best,BioMistral-7B,0.8084
+table13_probe_by_view,Best,Meditron-7B,0.7960
+table13_probe_by_view,Best,PMC-LLaMA-7B,0.7684
+table13_probe_by_view,Best,Llama-3.1-8B-Instruct,0.8626
+table14_bootstrap_ci,raw / prompt,BioMistral-7B,"[0.7845, 0.7958]"
+table14_bootstrap_ci,raw / prompt,Meditron-7B,"[0.7867, 0.7996]"
+table14_bootstrap_ci,raw / prompt,PMC-LLaMA-7B,"[0.7603, 0.7739]"
+table14_bootstrap_ci,raw / prompt,Llama-3.1-8B-Instruct,"[0.8366, 0.8480]"
+table14_bootstrap_ci,raw / gen0,BioMistral-7B,"[0.8026, 0.8144]"
+table14_bootstrap_ci,raw / gen0,Meditron-7B,"[0.7896, 0.8028]"
+table14_bootstrap_ci,raw / gen0,PMC-LLaMA-7B,"[0.7601, 0.7737]"
+table14_bootstrap_ci,raw / gen0,Llama-3.1-8B-Instruct,"[0.8568, 0.8678]"
+table14_bootstrap_ci,exact_cett / prompt,BioMistral-7B,"[0.7835, 0.7950]"
+table14_bootstrap_ci,exact_cett / prompt,Meditron-7B,"[0.7899, 0.8024]"
+table14_bootstrap_ci,exact_cett / prompt,PMC-LLaMA-7B,"[0.7589, 0.7725]"
+table14_bootstrap_ci,exact_cett / prompt,Llama-3.1-8B-Instruct,"[0.8370, 0.8480]"
+table14_bootstrap_ci,exact_cett / gen0,BioMistral-7B,"[0.8013, 0.8130]"
+table14_bootstrap_ci,exact_cett / gen0,Meditron-7B,"[0.7843, 0.7971]"
+table14_bootstrap_ci,exact_cett / gen0,PMC-LLaMA-7B,"[0.7611, 0.7746]"
+table14_bootstrap_ci,exact_cett / gen0,Llama-3.1-8B-Instruct,"[0.8550, 0.8651]"
+table15_topk_vs_random,best AUROC,BioMistral-7B,0.8084
+table15_topk_vs_random,best AUROC,Meditron-7B,0.7960
+table15_topk_vs_random,best AUROC,PMC-LLaMA-7B,0.7671
+table15_topk_vs_random,best AUROC,Llama-3.1-8B-Instruct,0.8626
+table15_topk_vs_random,random-k AUROC,BioMistral-7B,0.8069
+table15_topk_vs_random,random-k AUROC,Meditron-7B,0.7890
+table15_topk_vs_random,random-k AUROC,PMC-LLaMA-7B,0.7633
+table15_topk_vs_random,random-k AUROC,Llama-3.1-8B-Instruct,0.8584
+table15_topk_vs_random,lift (raw),BioMistral-7B,0.0016
+table15_topk_vs_random,lift (raw),Meditron-7B,0.0069
+table15_topk_vs_random,lift (raw),PMC-LLaMA-7B,0.0038
+table15_topk_vs_random,lift (raw),Llama-3.1-8B-Instruct,0.0042
+table15_topk_vs_random,lift (exact_cett),BioMistral-7B,0.0075
+table15_topk_vs_random,lift (exact_cett),Meditron-7B,0.0075
+table15_topk_vs_random,lift (exact_cett),PMC-LLaMA-7B,0.0087
+table15_topk_vs_random,lift (exact_cett),Llama-3.1-8B-Instruct,0.0130
+table15_topk_vs_random,L1 nonzero neurons,BioMistral-7B,3806
+table15_topk_vs_random,L1 nonzero neurons,Meditron-7B,1619
+table15_topk_vs_random,L1 nonzero neurons,PMC-LLaMA-7B,1767
+table15_topk_vs_random,L1 nonzero neurons,Llama-3.1-8B-Instruct,3046
+table15_topk_vs_random,L1 AUROC,BioMistral-7B,0.8039
+table15_topk_vs_random,L1 AUROC,Meditron-7B,0.7997
+table15_topk_vs_random,L1 AUROC,PMC-LLaMA-7B,0.7660
+table15_topk_vs_random,L1 AUROC,Llama-3.1-8B-Instruct,0.8543
+table16_raw_cett_overlap,layer,BioMistral-7B,L17
+table16_raw_cett_overlap,layer,Meditron-7B,L19
+table16_raw_cett_overlap,layer,PMC-LLaMA-7B,L8
+table16_raw_cett_overlap,layer,Llama-3.1-8B-Instruct,L15
+table16_raw_cett_overlap,top-50,BioMistral-7B,0.0101
+table16_raw_cett_overlap,top-50,Meditron-7B,0.0101
+table16_raw_cett_overlap,top-50,PMC-LLaMA-7B,0.0204
+table16_raw_cett_overlap,top-50,Llama-3.1-8B-Instruct,0.0417
+table16_raw_cett_overlap,top-100,BioMistral-7B,0.0256
+table16_raw_cett_overlap,top-100,Meditron-7B,0.0526
+table16_raw_cett_overlap,top-100,PMC-LLaMA-7B,0.0256
+table16_raw_cett_overlap,top-100,Llama-3.1-8B-Instruct,0.0526
+table16_raw_cett_overlap,top-500,BioMistral-7B,0.0471
+table16_raw_cett_overlap,top-500,Meditron-7B,0.0718
+table16_raw_cett_overlap,top-500,PMC-LLaMA-7B,0.0684
+table16_raw_cett_overlap,top-500,Llama-3.1-8B-Instruct,0.0753
+table17_position_fusion,all,BioMistral-7B,0.780 / 0.784 / 0.793
+table17_position_fusion,all,Meditron-7B,0.772 / 0.777 / 0.779
+table17_position_fusion,all,PMC-LLaMA-7B,0.766 / 0.763 / 0.764
+table17_position_fusion,all,Llama-3.1-8B-Instruct,0.834 / 0.833 / 0.855
+table17_position_fusion,medmcqa,BioMistral-7B,0.680 / 0.707 / 0.706
+table17_position_fusion,medmcqa,Meditron-7B,0.598 / 0.576 / 0.591
+table17_position_fusion,medmcqa,PMC-LLaMA-7B,0.571 / 0.553 / 0.559
+table17_position_fusion,medmcqa,Llama-3.1-8B-Instruct,0.828 / 0.851 / 0.865
+table17_position_fusion,medqa_usmle,BioMistral-7B,0.635 / 0.650 / 0.658
+table17_position_fusion,medqa_usmle,Meditron-7B,0.566 / 0.558 / 0.574
+table17_position_fusion,medqa_usmle,PMC-LLaMA-7B,0.545 / 0.563 / 0.567
+table17_position_fusion,medqa_usmle,Llama-3.1-8B-Instruct,0.774 / 0.779 / 0.799
+table17_position_fusion,pubmedqa_artificial,BioMistral-7B,0.930 / 0.937 / 0.943
+table17_position_fusion,pubmedqa_artificial,Meditron-7B,0.930 / 0.920 / 0.939
+table17_position_fusion,pubmedqa_artificial,PMC-LLaMA-7B,0.721 / 0.746 / 0.762
+table17_position_fusion,pubmedqa_artificial,Llama-3.1-8B-Instruct,0.953 / 0.951 / 0.957
+table17_position_fusion,pubmedqa_labeled,BioMistral-7B,0.768 / 0.819 / 0.811
+table17_position_fusion,pubmedqa_labeled,Meditron-7B,0.784 / 0.804 / 0.823
+table17_position_fusion,pubmedqa_labeled,PMC-LLaMA-7B,0.657 / 0.632 / 0.689
+table17_position_fusion,pubmedqa_labeled,Llama-3.1-8B-Instruct,0.750 / 0.771 / 0.784
+table18_dimensionality,PC1 variance,BioMistral-7B,0.630
+table18_dimensionality,PC1 variance,Meditron-7B,0.738
+table18_dimensionality,PC1 variance,PMC-LLaMA-7B,0.771
+table18_dimensionality,PC1 variance,Llama-3.1-8B-Instruct,0.482
+table18_dimensionality,PC1-only AUROC,BioMistral-7B,0.7725
+table18_dimensionality,PC1-only AUROC,Meditron-7B,0.7744
+table18_dimensionality,PC1-only AUROC,PMC-LLaMA-7B,0.7625
+table18_dimensionality,PC1-only AUROC,Llama-3.1-8B-Instruct,0.7908
+table18_dimensionality,non-linearity premium,BioMistral-7B,0.0344
+table18_dimensionality,non-linearity premium,Meditron-7B,0.0163
+table18_dimensionality,non-linearity premium,PMC-LLaMA-7B,0.0059
+table18_dimensionality,non-linearity premium,Llama-3.1-8B-Instruct,0.0692
+table18_dimensionality,Cohen's d (best neuron),BioMistral-7B,0.9477
+table18_dimensionality,Cohen's d (best neuron),Meditron-7B,1.2800
+table18_dimensionality,Cohen's d (best neuron),PMC-LLaMA-7B,1.1329
+table18_dimensionality,Cohen's d (best neuron),Llama-3.1-8B-Instruct,0.9241
+table18_dimensionality,diff/correct norm ratio,BioMistral-7B,0.7039
+table18_dimensionality,diff/correct norm ratio,Meditron-7B,0.8331
+table18_dimensionality,diff/correct norm ratio,PMC-LLaMA-7B,0.8112
+table18_dimensionality,diff/correct norm ratio,Llama-3.1-8B-Instruct,0.3872
+table18_dimensionality,Brier,BioMistral-7B,0.1739
+table18_dimensionality,Brier,Meditron-7B,0.1609
+table18_dimensionality,Brier,PMC-LLaMA-7B,0.1707
+table18_dimensionality,Brier,Llama-3.1-8B-Instruct,0.1190
+table18_dimensionality,ECE,BioMistral-7B,0.0304
+table18_dimensionality,ECE,Meditron-7B,0.0400
+table18_dimensionality,ECE,PMC-LLaMA-7B,0.0200
+table18_dimensionality,ECE,Llama-3.1-8B-Instruct,0.0266

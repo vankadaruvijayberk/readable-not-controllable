@@ -1,0 +1,4 @@
+,BioMistral-7B,Meditron-7B,PMC-LLaMA-7B,Llama-3.1-8B-Instruct
+d_inter,14336,11008,11008,14336
+N (clean),21008,20912,20717,21169
+Overall hall-rate,0.446,0.557,0.573,0.208

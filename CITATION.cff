@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "Readable but Not Controllable: Neuron-Level Evidence for Medical LLM Hallucination"
+repository-code: "https://github.com/vankadaruvijayberk/readable-not-controllable"
+license: MIT
+authors:
+  - family-names: Vankadaru
+    given-names: Vijay
+    email: vankadaruvijay@berkeley.edu
+  - family-names: Matthews
+    given-names: Asha
+  - family-names: Roosta
+    given-names: Tanya
+  - family-names: Passban
+    given-names: Peyman
+preferred-citation:
+  type: conference-paper
+  title: "Readable but Not Controllable: Neuron-Level Evidence for Medical LLM Hallucination"
+  authors:
+    - family-names: Vankadaru
+      given-names: Vijay
+    - family-names: Matthews
+      given-names: Asha
+    - family-names: Roosta
+      given-names: Tanya
+    - family-names: Passban
+      given-names: Peyman
+  collection-title: "DAIH Workshop at the Conference on Language Modeling (COLM)"
+  year: 2026
+  identifiers:
+    - type: other
+      value: "arXiv:2607.00158"

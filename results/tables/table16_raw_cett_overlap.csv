@@ -1,0 +1,5 @@
+,BioMistral-7B,Meditron-7B,PMC-LLaMA-7B,Llama-3.1-8B-Instruct
+layer,L17,L19,L8,L15
+top-50,0.0101,0.0101,0.0204,0.0417
+top-100,0.0256,0.0526,0.0256,0.0526
+top-500,0.0471,0.0718,0.0684,0.0753

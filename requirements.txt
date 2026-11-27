@@ -1,0 +1,18 @@
+# Python 3.11. Versions used for the tests, the CPU smoke test and the Table 5 rerun.
+# torch: install the build for your CUDA version; the CPU build is enough for the smoke test.
+torch==2.15.0
+transformers==4.45.2
+accelerate==1.16.0
+datasets==5.0.1
+huggingface_hub==0.36.2
+sentencepiece==0.2.3
+protobuf==7.36.2
+numpy==2.4.6
+scipy==1.17.1
+scikit-learn==1.9.1
+pandas==3.1.1
+pyarrow==26.0.1
+matplotlib==3.11.2
+PyYAML==6.0.4
+tqdm==4.70.1
+pytest==9.2.0

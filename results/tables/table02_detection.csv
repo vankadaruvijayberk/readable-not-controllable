@@ -1,0 +1,6 @@
+,BioMistral-7B,Meditron-7B,PMC-LLaMA-7B,Llama-3.1-8B-Instruct
+Best layer,L17,L14,L10,L15
+Probe AUROC,0.808,0.796,0.767,0.863
+Full-layer AUROC,0.769,0.782,0.739,0.815
+Random k=500 AUROC,0.807,0.789,0.763,0.859
+Base hallucination rate,0.446,0.557,0.573,0.208

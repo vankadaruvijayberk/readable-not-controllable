@@ -1,0 +1,18 @@
+# large or regenerable files: activations, per-example intervention outputs, scratch memmaps
+activations/
+outputs/
+work/
+*.npy
+*.dat
+*.parquet
+*.safetensors
+*.bin
+
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+.ruff_cache/

@@ -1,0 +1,7 @@
+,BioMistral-7B,Meditron-7B,PMC-LLaMA-7B,Llama-3.1-8B-Instruct
+best AUROC,0.8084,0.7960,0.7671,0.8626
+random-k AUROC,0.8069,0.7890,0.7633,0.8584
+lift (raw),0.0016,0.0069,0.0038,0.0042
+lift (exact_cett),0.0075,0.0075,0.0087,0.0130
+L1 nonzero neurons,3806,1619,1767,3046
+L1 AUROC,0.8039,0.7997,0.7660,0.8543

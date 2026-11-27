@@ -1,0 +1,5 @@
+,BioMistral-7B,Meditron-7B,PMC-LLaMA-7B,Llama-3.1-8B-Instruct
+Jaccard top-50,0.0096,0.0320,0.0180,0.0041
+Random Jaccard,0.0012,0.0038,0.0038,0.0012
+Spearman (AUROC rank),0.0520,0.0976,0.0651,0.0285
+CKA top-500,0.9514,0.8962,0.8620,0.9239

@@ -1,0 +1,6 @@
+,estimate,ci_low,ci_high
+Selected-set swing,0.012,0.007,0.019
+Random-set swing,0.008,0.005,0.010
+Delta (selected - random),0.0042,-0.0002,0.0096
+Amplification effect,0.0037,-0.0032,0.012
+"Logit slope, log P(correct) vs alpha",-0.0045,-0.033,0.020

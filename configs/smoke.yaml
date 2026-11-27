@@ -1,0 +1,60 @@
+# CPU-sized settings for the smoke tests. Same pipeline, a 135M model and a few dozen examples.
+seed: 42
+
+activations_repo: null
+interventions_repo: null
+
+models:
+  smollm2-135m: HuggingFaceTB/SmolLM2-135M-Instruct
+
+datasets: [medqa_usmle, medmcqa]
+
+generation:
+  device: cpu
+  dtype: float32
+  max_new_tokens: 4
+  max_prompt_length: 256
+
+collection:
+  chunk_size: 20
+  budgets: {medmcqa: 60, medqa_usmle: 60}
+
+detection:
+  ks: [10, 50]
+  n_random_draws: 3
+  random_subset_seed: 123
+  n_bootstrap: 100
+  l1_C: 0.1
+  small_k: 10
+  overlap_ks: [10, 50]
+  cka_k: 50
+  min_samples: 20
+  min_positives: 5
+
+ksweep:
+  k_grid: [1, 10, 30, 100]
+  small_k_max: 10
+  draws_small_k: 4
+  draws_large_k: 2
+  projection_dims: [2, 10]
+  projection_draws: 2
+
+intervention:
+  budgets: {medmcqa: 60, medqa_usmle: 60}
+  max_total_samples: 60
+  test_frac: 0.2
+  train_cap: 48
+  eval_cap: 12
+  batch_size: 4
+  dose_alphas: [0.0, 0.5, 1.0, 2.0, 4.0]
+  dose_k: 30
+  sparse_ks: [10, 100]
+  sparse_alpha: 0.5
+  direction_strengths: [-4.0, -2.0, 0.0, 2.0, 4.0]
+
+analysis:
+  n_bootstrap: 200
+  n_pooled_bootstrap: 500
+  reliability_threshold: 0.55
+  trend_p: 0.05
+  min_excess_over_control: 0.02
